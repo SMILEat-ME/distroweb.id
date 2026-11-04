@@ -1,0 +1,1042 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout>
+<!-- TOP NAVIGATION BAR -->
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a href="#" class="brand" aria-label="Beranda Distro Web">
+                <img src="/logo.png" alt="Logo Distro Web" class="brand-logo" width="42" height="42">
+                <span class="brand-name">DISTRO<span>WEB</span></span>
+            </a>
+            <div class="topbar-actions">
+                <button class="theme-toggle" id="theme-btn" aria-label="Ganti mode warna terang/gelap"
+                    title="Ganti Mode Terang / Gelap">
+                    <span id="theme-icon">◐</span>
+                </button>
+                <a class="btn btn-nav"
+                    href="https://wa.me/6285183324266?text=Halo%20Distro%20Web%2C%20mau%20konsultasi%20website"
+                    target="_blank" rel="noopener">Chat WA</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="kicker">
+                <span class="kicker-tag">EST. 2026</span>
+                <span>100% HAND-CRAFTED • ZERO TEMPLATE</span>
+            </div>
+            <h1><span>Bukan</span> <span>baju</span> <span>obral.</span></h1>
+            <p>Template website itu kayak baju obral dipakai ribuan bisnis, jadi ibarat baju potongannya seragam semua.
+                Sementara disini websitemu kami jahit dari nol biar pas sama karakter brand dan audiensmu!</p>
+            <div class="hero-actions">
+                <a class="btn" href="#paket">Pilih Potonganmu</a>
+                <a class="btn btn-secondary" href="#hitung">Hitung Biaya Sendiri</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="visual-board" id="vboard">
+                <div class="sticker sticker-1">ANTI TEMPLATE CLUB</div>
+                <div class="sticker sticker-3">100% CLEAN CODE</div>
+                <div class="sticker sticker-2">MADE IN BANDUNG ★</div>
+
+                <!-- Realistic Interactive Swinging Hangtag -->
+                <div class="hangtag-container">
+                    <div class="hangtag-string"></div>
+                    <div class="hangtag" id="tag">
+                        <div class="hangtag-hole"></div>
+                        <div class="hangtag-brand">DISTRO WEB</div>
+                        <div class="hangtag-subtitle">CUSTOM CODEWEAR</div>
+                        <hr class="hangtag-divider">
+                        <div class="hangtag-meta">
+                            <span>ART: 001-TAILOR</span>
+                            <span>LOT: BDG-2026</span>
+                        </div>
+                        <div class="barcode" aria-hidden="true">
+                            <span class="w2"></span><span class="sp"></span>
+                            <span class="w1"></span><span class="w3"></span><span class="sp"></span>
+                            <span class="w2"></span><span class="w1"></span><span class="sp"></span>
+                            <span class="w3"></span><span class="w1"></span><span class="w2"></span><span
+                                class="sp"></span>
+                            <span class="w1"></span><span class="w2"></span><span class="w3"></span>
+                        </div>
+                        <div class="barcode-code">DW-BDG-2026-X</div>
+                        <div class="hangtag-seal">CERTIFIED ORIGINAL</div>
+                    </div>
+                </div>
+
+                <!-- Mascot Si Kursor -->
+                <div class="mascot-wrap">
+                    <svg class="mascot" id="m" viewBox="0 0 200 240" role="img"
+                        aria-label="Si Kursor, maskot Distro Web yang ngantuk">
+                        <path d="M40 14 L168 128 L112 132 L130 188 L100 198 L82 142 L40 176 Z" fill="#0E2A1A"
+                            transform="translate(7 7)" />
+                        <path d="M40 14 L168 128 L112 132 L130 188 L100 198 L82 142 L40 176 Z" fill="#F2EBD3"
+                            stroke="#0E2A1A" stroke-width="5" stroke-linejoin="round" />
+                        <g class="eye" id="eye">
+                            <path d="M62 82q9 -8 18 0M92 98q9 -8 18 0" stroke="#0E2A1A" stroke-width="5" fill="none"
+                                stroke-linecap="round" />
+                            <circle cx="71" cy="86" r="3" fill="#0E2A1A" />
+                            <circle cx="101" cy="102" r="3" fill="#0E2A1A" />
+                        </g>
+                        <path d="M76 112q12 10 24 2" stroke="#0E2A1A" stroke-width="4" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M92 196l-4 30h18M120 188l12 36h16" stroke="#0E2A1A" stroke-width="6" fill="none"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TICKER STRIPE -->
+    <div class="stripe" aria-hidden="true">
+        <div>Different Looks. Different Links. &nbsp;★&nbsp; Studio website dari Bandung, 2026 &nbsp;★&nbsp; 100% Custom
+            Code, No Template &nbsp;★&nbsp; Different Looks. Different Links. &nbsp;★&nbsp; Studio website dari Bandung,
+            2026 &nbsp;★&nbsp; 100% Custom Code, No Template &nbsp;★&nbsp;</div>
+    </div>
+
+    <!-- SECTION: BEDA (BROWSER WINDOW MOCKUP) -->
+    <section id="beda">
+        <h2>Geser, lihat bedanya.</h2>
+        <p style="margin-top:14px">Bisnis yang sama, dua jahitan berbeda. Kiri template gratisan yang dipakai ribuan
+            orang, kanan website yang kami jahit khusus. Geser sendiri garisnya!</p>
+
+        <div class="cmp-wrapper">
+            <div class="cmp-browser-bar">
+                <div class="browser-dots">
+                    <span class="browser-dot red"></span>
+                    <span class="browser-dot yellow"></span>
+                    <span class="browser-dot green"></span>
+                </div>
+                <div class="browser-url-bar">
+                    <span>🔒 https://distroweb.id/compare-preview</span>
+                    <span>HTML5 • ULTRA FAST</span>
+                </div>
+            </div>
+
+            <div class="cmp" id="cmp">
+                <!-- BEFORE: bisnis yang sama, pakai template gratisan pasaran -->
+                <div class="site tpl">
+                    <div class="tpl-top">
+                        <span>📞 (022) 123-4567 &nbsp;·&nbsp; ✉ info@kedaikopisenja.com</span>
+                        <span>f &nbsp; t &nbsp; in</span>
+                    </div>
+                    <div class="tpl-nav">
+                        <div class="tpl-logo"><span class="tpl-logo-icon">☕</span> Kedai Kopi Senja</div>
+                        <div class="tpl-links">
+                            <span class="on">Home</span><span>About
+                                Us</span><span>Services</span><span>Gallery</span><span>Contact</span>
+                        </div>
+                    </div>
+                    <div class="tpl-hero">
+                        <span class="tpl-arrow l">‹</span>
+                        <div>
+                            <div class="tpl-title">Selamat Datang di Website Kami</div>
+                            <p class="tpl-desc">Kami adalah perusahaan yang bergerak di bidang kopi. Kami berkomitmen
+                                memberikan pelayanan terbaik dan produk berkualitas untuk kepuasan pelanggan.</p>
+                            <div class="tpl-actions">
+                                <span class="tpl-btn">Read More</span>
+                                <span class="tpl-btn-o">Contact Us</span>
+                            </div>
+                        </div>
+                        <span class="tpl-arrow r">›</span>
+                        <div class="tpl-dots"><i></i><i></i><i></i></div>
+                    </div>
+                    <div class="tpl-feats">
+                        <div class="tpl-feat"><i>★</i><b>Kualitas Terbaik</b>Lorem ipsum dolor sit amet.</div>
+                        <div class="tpl-feat"><i>$</i><b>Harga Terjangkau</b>Consectetur adipiscing elit.</div>
+                        <div class="tpl-feat"><i>♥</i><b>Pelayanan Ramah</b>Sed do eiusmod tempor.</div>
+                    </div>
+                    <div class="tpl-foot">© 2026 Kedai Kopi Senja · Powered by FreeTheme Template #1428</div>
+                </div>
+
+                <!-- AFTER: bisnis yang sama, dijahit custom oleh Distro Web -->
+                <div class="site cus" id="cus">
+                    <div class="cus-glow"></div>
+                    <div class="cus-nav">
+                        <div class="cus-logo"><span>senja<em>.</em></span><small>Coffee Roasters</small></div>
+                        <div class="cus-links">
+                            <span>Menu</span><span>Origin</span><span>Wholesale</span><span>Kunjungi</span>
+                        </div>
+                        <span class="cus-nav-cta">Reservasi →</span>
+                    </div>
+                    <div class="cus-hero">
+                        <div>
+                            <div class="cus-title">Kopi jujur dari <em>lereng Puntang</em>, diseduh untuk harimu.</div>
+                            <p class="cus-desc">Single origin dari petani lokal, disangrai segar tiap minggu, dan
+                                disajikan barista yang hafal pesanan favoritmu.</p>
+                            <div class="cus-proof" style="margin-top: 22px;">
+                                <div class="cus-avatars"><i></i><i></i><i></i><i></i></div>
+                                <div><b>4.9 <span>★★★★★</span></b>2.300+ ulasan di Google</div>
+                            </div>
+                        </div>
+                        <div class="cus-visual">
+                            <svg class="cus-ring" viewBox="0 0 200 200" aria-hidden="true">
+                                <defs>
+                                    <path id="cusCircle" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0" />
+                                </defs>
+                                <text>
+                                    <textPath href="#cusCircle">FRESH ROASTED WEEKLY • SENJA COFFEE • BANDUNG •
+                                    </textPath>
+                                </text>
+                            </svg>
+                            <div class="cus-saucer"></div>
+                            <div class="cus-cup">
+                                <div class="cus-coffee">
+                                    <div class="cus-heart"></div>
+                                </div>
+                            </div>
+                            <div class="cus-chip c1">⛰️<div><small>Origin</small>Puntang · 1.400 mdpl</div>
+                            </div>
+                            <div class="cus-chip c2">🍫<div><small>Tasting Notes</small>Cokelat · Jeruk · Aren</div>
+                            </div>
+                            <div class="cus-chip c3">🔥<div><small>Drop Batch #04</small>Diskon 15%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cus-marquee" aria-hidden="true">
+                        <div>Single Origin<span>✦</span>Manual Brew<span>✦</span>Roasted Weekly<span>✦</span>Workspace
+                            &amp; Free Wifi<span>✦</span>Delivery Se-Bandung<span>✦</span>Single
+                            Origin<span>✦</span>Manual Brew<span>✦</span>Roasted Weekly<span>✦</span>Workspace &amp;
+                            Free Wifi<span>✦</span>Delivery Se-Bandung<span>✦</span></div>
+                    </div>
+                </div>
+
+                <div class="handle"></div>
+                <span class="tag-l">Before: Template Pasaran</span>
+                <span class="tag-r">After: Distro Web Custom</span>
+                <input type="range" min="0" max="100" value="50" id="rng"
+                    aria-label="Geser untuk membandingkan template dan website custom">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: FAQ -->
+    <section id="faq">
+        <div class="faq-header">
+            <h2>Yang Sering Ditanyain, Nih!</h2>
+        </div>
+
+        <!-- FAQ Accordion Items -->
+        <div class="faq-list">
+            <details>
+                <summary><span class="faq-num">01</span><span class="faq-q">Kenapa nggak beli template siap pakai
+                        aja?</span><span class="faq-toggle">+</span></summary>
+                <p class="faq-answer">Template murah memang banyak, tapi resikonya ratusan bisnis lain punya tampilan
+                    yang persis sama. Selain itu, template pasaran sering memuat ratusan kode yang nggak kamu butuhkan
+                    sehingga loadingnya berat dan peringkat di Google kurang optimal. Di Distro Web, setiap baris kode
+                    dijahit khusus hanya untuk bisnismu.</p>
+            </details>
+            <details>
+                <summary><span class="faq-num">02</span><span class="faq-q">Bedanya apa sama software house / agensi
+                        besar?</span><span class="faq-toggle">+</span></summary>
+                <p class="faq-answer">Agensi besar biasanya menetapkan biaya puluhan hingga ratusan juta karena overhead
+                    tim yang besar. Distro Web adalah studio independen di Bandung yang berfokus memberikan kualitas
+                    custom sekelas agensi dengan struktur harga yang masuk akal dan bersahabat bagi UMKM dan brand
+                    independen.</p>
+            </details>
+            <details>
+                <summary><span class="faq-num">03</span><span class="faq-q">Websitenya 100% jadi milik aku,
+                        kan?</span><span class="faq-toggle">+</span></summary>
+                <p class="faq-answer">Tentu saja. Domain dan hosting didaftarkan resmi atas nama dan email kamu sendiri.
+                    Kamu menerima seluruh akses admin, source code, dan database penuh pada saat Drop Day.</p>
+            </details>
+            <details>
+                <summary><span class="faq-num">04</span><span class="faq-q">Bagaimana sistem pembayarannya?</span><span
+                        class="faq-toggle">+</span></summary>
+                <p class="faq-answer">Sangat transparan: DP 50% di awal sebelum pola dibuat, dan pelunasan 50% saat
+                    website siap online di tahap Drop Day. Setiap proyek dilengkapi penawaran tertulis dan invoice
+                    resmi.</p>
+            </details>
+            <details>
+                <summary><span class="faq-num">05</span><span class="faq-q">Berapa lama proses
+                        pengerjaannya?</span><span class="faq-toggle">+</span></summary>
+                <p class="faq-answer">Tergantung paket: Kaos Polos (landing page) 5–7 hari kerja, Kemeja (company
+                    profile) 10–15 hari kerja, Jaket (toko online) 20–30 hari kerja. Semua timeline dicantumkan dalam
+                    penawaran tertulis sebelum kita mulai.</p>
+            </details>
+            <details>
+                <summary><span class="faq-num">06</span><span class="faq-q">Kalau website sudah jadi, bisa saya ubah
+                        sendiri?</span><span class="faq-toggle">+</span></summary>
+                <p class="faq-answer">Bisa! Kamu akan mendapat video tutorial 15 menit yang kami buat khusus sesuai
+                    strukturmu. Dan tentunya ada Paket Rawat buat yang ingin bantuan teknis rutin setelah launch.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- SECTION: ALUR JAHIT -->
+    <section id="alur">
+        <h2>Dijahit dalam 6 tahap.</h2>
+        <p style="margin-top:14px">Kamu selalu tahu lagi sampai mana. Scroll pelan, pita meteran jahit dan Si Kursor
+            akan memandu alurnya.</p>
+        <div class="tl" id="tl">
+            <div class="fill"></div>
+            <svg class="cur" viewBox="0 0 60 60" aria-hidden="true">
+                <path d="M8 4L52 40 32 42 40 58 30 60 22 44 8 56Z" fill="#F2EBD3" stroke="#0E2A1A" stroke-width="4"
+                    stroke-linejoin="round" />
+            </svg>
+            <div class="st" data-n="1">
+                <span class="st-step-badge">STEP 01</span>
+                <h3>Ukur Badan</h3>
+                <p>Konsultasi gratis 100%. Kamu ceritain visi bisnismu, lalu terima penawaran tertulis: rincian harga,
+                    rekomendasi domain & hosting resmi, jatah revisi, dan jadwal pengerjaan.</p>
+            </div>
+            <div class="st" data-n="2">
+                <span class="st-step-badge">STEP 02</span>
+                <h3>Bikin Pola</h3>
+                <p>Kami buat wireframe arsitektur halaman dan alur pengunjung. Kamu review dan beri lampu hijau sebelum
+                    kami masuk ke proses sablon visual.</p>
+            </div>
+            <div class="st" data-n="3">
+                <span class="st-step-badge">STEP 03</span>
+                <h3>Sablon Desain</h3>
+                <p>Desain visual berkarakter streetwear distingtif yang sesuai warna brand, tipografi, dan persona
+                    target pasarmu.</p>
+            </div>
+            <div class="st" data-n="4">
+                <span class="st-step-badge">STEP 04</span>
+                <h3>Jahit Kode</h3>
+                <p>Karya visual dihidupkan dengan kode kencang, responsif, aksesibilitas tinggi, dan struktur SEO yang
+                    siap bersaing di halaman Google.</p>
+            </div>
+            <div class="st" data-n="5">
+                <span class="st-step-badge">STEP 05</span>
+                <h3>Quality Control</h3>
+                <p>Kami uji menyeluruh di HP Android, iPhone, tablet, hingga layar laptop lebar. Kamu uji coba langsung
+                    dan ajukan revisi sesuai paket.</p>
+            </div>
+            <div class="st" data-n="6">
+                <span class="st-step-badge">STEP 06</span>
+                <h3>Drop Day (Launch)</h3>
+                <p>Website resmi meluncur ke publik! Kamu terima 100% kepemilikan penuh, akses panel admin, dan panduan
+                    pengelolaan mandiri.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: PAKET (DISTRO CLOTHING RACK & HANGTAGS) -->
+    <section id="paket">
+        <h2>Pilih potonganmu.</h2>
+        <p style="margin-top:14px">Gantungan baju distro kami siap melayani berbagai skala brand. Klik salah satu label
+            untuk membuka lembar spesifikasi (tech pack).</p>
+
+        <div class="rack-container">
+            <div class="rack-bar" aria-hidden="true">
+                <div class="rack-bracket"></div>
+                <div class="rack-pipe"></div>
+                <div class="rack-bracket"></div>
+            </div>
+
+            <div class="tags" role="group" aria-label="Pilih paket website">
+                <!-- Tag 1: Kaos Polos -->
+                <button class="tg" data-k="kaos" aria-pressed="true">
+                    <div class="tg-cord" aria-hidden="true"></div>
+                    <div class="tg-eyelet" aria-hidden="true"></div>
+                    <div class="tg-header">
+                        <svg class="garment-icon" viewBox="0 0 64 64" fill="none" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M20 12 L26 18 Q32 22 38 18 L44 12 L58 22 L50 34 L44 30 L44 54 L20 54 L20 30 L14 34 L6 22 Z" />
+                            <path d="M26 18 Q32 22 38 18" />
+                            <path d="M28 32 H36" />
+                        </svg>
+                        <span class="fit-badge">FIT: REGULAR • 1 PAGE</span>
+                    </div>
+                    <div>
+                        <h3>Kaos Polos</h3>
+                        <div class="price-tag">
+                            <span class="cur-lbl">Rp</span>
+                            <span class="pr">2.000.000</span>
+                        </div>
+                    </div>
+                    <p class="tg-desc">Landing page 1 halaman panjang. Sangat cocok buat usaha baru, rilis single band,
+                        produk viral, atau upgrade bio Instagram.</p>
+                </button>
+
+                <!-- Tag 2: Kemeja (Best Seller) -->
+                <button class="tg" data-k="kemeja" aria-pressed="false">
+                    <div class="badge-tape">★ PALING LARIS • BEST VALUE</div>
+                    <div class="tg-cord" aria-hidden="true"></div>
+                    <div class="tg-eyelet" aria-hidden="true"></div>
+                    <div class="tg-header">
+                        <svg class="garment-icon" viewBox="0 0 64 64" fill="none" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M20 12 L25 20 L32 20 L39 20 L44 12 L58 22 L50 34 L44 30 L44 54 L20 54 L20 30 L14 34 L6 22 Z" />
+                            <path d="M32 20 V54" />
+                            <circle cx="32" cy="27" r="1.5" fill="currentColor" />
+                            <circle cx="32" cy="35" r="1.5" fill="currentColor" />
+                            <circle cx="32" cy="43" r="1.5" fill="currentColor" />
+                            <rect x="23" y="27" width="6" height="8" rx="1" />
+                        </svg>
+                        <span class="fit-badge">FIT: COMFORT • 4-6 PAGES</span>
+                    </div>
+                    <div>
+                        <h3>Kemeja</h3>
+                        <div class="price-tag">
+                            <span class="cur-lbl">Rp</span>
+                            <span class="pr">4.500.000</span>
+                        </div>
+                    </div>
+                    <p class="tg-desc">Company profile 4 hingga 6 halaman profesional. Pilihan utama kafe, studio
+                        kreatif, firma, & UMKM yang ingin tampil matang.</p>
+                </button>
+
+                <!-- Tag 3: Jaket -->
+                <button class="tg" data-k="jaket" aria-pressed="false">
+                    <div class="tg-cord" aria-hidden="true"></div>
+                    <div class="tg-eyelet" aria-hidden="true"></div>
+                    <div class="tg-header">
+                        <svg class="garment-icon" viewBox="0 0 64 64" fill="none" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M20 14 L24 22 L40 22 L44 14 L60 24 L52 38 L45 34 L45 54 L19 54 L19 34 L12 38 L4 24 Z" />
+                            <path d="M32 22 V54" stroke-dasharray="3 2" />
+                            <path d="M24 22 L32 30 L40 22" />
+                            <rect x="23" y="38" width="7" height="9" rx="1" />
+                            <rect x="34" y="38" width="7" height="9" rx="1" />
+                        </svg>
+                        <span class="fit-badge">FIT: HEAVY • TOKO ONLINE</span>
+                    </div>
+                    <div>
+                        <h3>Jaket</h3>
+                        <div class="price-tag">
+                            <span class="cur-lbl">Rp</span>
+                            <span class="pr">9.000.000</span>
+                        </div>
+                    </div>
+                    <p class="tg-desc">Toko online lengkap maksimal 30 produk, integrasi payment gateway otomatis
+                        (QRIS/Transfer/E-Wallet), & hitung ongkir otomatis.</p>
+                </button>
+            </div>
+        </div>
+
+        <!-- Tech Pack Specification Panel -->
+        <div class="techpack-panel" aria-live="polite">
+            <div class="techpack-top">
+                <div class="techpack-tag">
+                    <span class="techpack-dot"></span>
+                    <span>TECH PACK // LEMBAR JAHITAN KODE</span>
+                </div>
+                <div class="techpack-art" id="spec-art">ART. DW-KAOS-01</div>
+            </div>
+
+            <!-- Production Specs Strip (Horizontal, Clean, Balanced) -->
+            <div class="techpack-stats-bar">
+                <div class="stat-badge">
+                    <span class="stat-lbl">⏱️ ESTIMASI WAKTU</span>
+                    <span class="stat-val" id="stat-time">5 - 7 Hari Kerja</span>
+                </div>
+                <div class="stat-badge">
+                    <span class="stat-lbl">✂️ JATAH REVISI</span>
+                    <span class="stat-val" id="stat-rev">2 Kali Garansi</span>
+                </div>
+                <div class="stat-badge stat-invest">
+                    <span class="stat-lbl">💰 TOTAL INVESTASI</span>
+                    <span class="stat-val" id="stat-price">Rp 2.000.000</span>
+                </div>
+            </div>
+
+            <!-- 2 Equal, Symmetrical Columns -->
+            <div class="techpack-grid">
+                <div class="techpack-col">
+                    <div class="techpack-col-title">FITUR UTAMA & DETAIL JAHITAN</div>
+                    <ul id="items" class="spec-list"></ul>
+                </div>
+
+                <div class="techpack-col techpack-right-col">
+                    <div class="techpack-target-card">
+                        <div class="techpack-col-title">🎯 COCOK BUAT SIAPA?</div>
+                        <p class="target-desc" id="spec-target"></p>
+                    </div>
+
+                    <div class="techpack-perks-box">
+                        <div class="techpack-col-title">📦 BONUS BAWA PULANG</div>
+                        <div class="perks-list">
+                            <div class="perk-item">
+                                <span class="perk-badge">FREE</span>
+                                <span>100% Hak Milik Source Code & Database</span>
+                            </div>
+                            <div class="perk-item">
+                                <span class="perk-badge">FREE</span>
+                                <span>Video Panduan 15 Menit kelola konten mandiri</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="techpack-bottom-bar">
+                <div class="techpack-guarantee-pills">
+                    <span class="pill">🔒 Bebas Biaya Konsultasi Awal</span>
+                    <span class="pill">💸 Pembayaran Bertahap 50/50</span>
+                    <span class="pill">🛠️ Garansi Teknis 30 Hari Penuh</span>
+                </div>
+                <a href="#hitung" class="btn-calc-shortcut">Simulasi Add-Ons di Kalkulator ↴</a>
+            </div>
+        </div>
+
+        <p class="note">Harga di atas belum termasuk domain dan hosting. Domain itu alamat websitemu (.com/.id), hosting
+            itu rumah tempat websitenya tersimpan. Keduanya kami tagih sesuai harga resmi penyedia, tanpa markup
+            keuntungan sesen pun.</p>
+    </section>
+
+    <!-- SECTION: HITUNG (CALCULATOR & THERMAL RECEIPT) -->
+    <section id="hitung">
+        <h2>Hitung sendiri.</h2>
+        <p style="margin-top:14px">Pilih paket dan add-on kebutuhanmu, struk nota transparan langsung terbit otomatis.
+        </p>
+        <div class="calc">
+            <div>
+                <div class="box">
+                    <div class="box-title">PILIH POLA DASAR</div>
+                    <label class="patch-card">
+                        <input type="radio" name="p" value="2000000" data-name="Kaos Polos (Landing Page)" checked>
+                        <div class="patch-left">
+                            <span class="patch-icon">👕</span>
+                            <span>Kaos Polos (Landing Page)</span>
+                        </div>
+                        <span class="patch-price">Rp 2.000.000</span>
+                    </label>
+                    <label class="patch-card">
+                        <input type="radio" name="p" value="4500000" data-name="Kemeja (Company Profile)">
+                        <div class="patch-left">
+                            <span class="patch-icon">👔</span>
+                            <span>Kemeja (Company Profile)</span>
+                        </div>
+                        <span class="patch-price">Rp 4.500.000</span>
+                    </label>
+                    <label class="patch-card" style="margin-bottom:0">
+                        <input type="radio" name="p" value="9000000" data-name="Jaket (Toko Online)">
+                        <div class="patch-left">
+                            <span class="patch-icon">🧥</span>
+                            <span>Jaket (Toko Online)</span>
+                        </div>
+                        <span class="patch-price">Rp 9.000.000</span>
+                    </label>
+                </div>
+
+                <div class="box" id="ad" style="margin-top:18px">
+                    <div class="box-title">SABLON & JAHITAN TAMBAHAN (ADD-ONS)</div>
+
+                    <label class="patch-card">
+                        <input type="checkbox" value="400000" data-name="Halaman Tambahan">
+                        <div class="patch-left">
+                            <span class="patch-icon">📄</span>
+                            <span>Halaman Tambahan (per halaman)</span>
+                        </div>
+                        <span class="patch-price">+Rp 400.000</span>
+                    </label>
+
+                    <label class="patch-card">
+                        <input type="checkbox" value="200000" data-name="Penulisan Copywriting">
+                        <div class="patch-left">
+                            <span class="patch-icon">✍️</span>
+                            <span>Penulisan Copywriting Teks</span>
+                        </div>
+                        <span class="patch-price">+Rp 200.000</span>
+                    </label>
+
+                    <label class="patch-card">
+                        <input type="checkbox" value="150000" data-name="Email Bisnis (@brand)">
+                        <div class="patch-left">
+                            <span class="patch-icon">✉️</span>
+                            <span>Setup Email Bisnis Resmi (@brand)</span>
+                        </div>
+                        <span class="patch-price">+Rp 150.000</span>
+                    </label>
+
+                    <label class="patch-card">
+                        <input type="checkbox" value="450000" data-name="Materi Konten IG (3 Carousel)">
+                        <div class="patch-left">
+                            <span class="patch-icon">📸</span>
+                            <span>Materi Konten Drop Day (3 Carousel IG)</span>
+                        </div>
+                        <span class="patch-price">+Rp 450.000</span>
+                    </label>
+
+                    <label class="patch-card">
+                        <input type="checkbox" value="500000" data-name="Kupon Promo & Voucher">
+                        <div class="patch-left">
+                            <span class="patch-icon">🏷️</span>
+                            <span>Sistem Diskon, Kupon & Voucher</span>
+                        </div>
+                        <span class="patch-price">+Rp 500.000</span>
+                    </label>
+
+                    <label class="patch-card" style="margin-bottom:0">
+                        <input type="checkbox" id="kilat" data-name="Pengerjaan Kilat (+30%)">
+                        <div class="patch-left">
+                            <span class="patch-icon">⚡</span>
+                            <span>Pengerjaan Kilat Ekspres (+30%)</span>
+                        </div>
+                        <span class="patch-price">Slot Prioritas</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Live Thermal Distro Receipt -->
+            <div class="receipt">
+                <div class="receipt-header">
+                    <div class="receipt-store">DISTRO WEB STUDIO</div>
+                    <div class="receipt-sub">JL. JAHITAN KODE NO. 26, BANDUNG</div>
+                    <div class="receipt-tagline">ORIGINAL LOCAL CODEWEAR // EST. 2026</div>
+                </div>
+
+                <div class="receipt-meta-grid">
+                    <div><span>TGL:</span> <b id="rc-date">2026-11-03</b></div>
+                    <div style="text-align:right"><span>KASIR:</span> <b>SI KURSOR #01</b></div>
+                    <div><span>TRX:</span> <b>#DW-8826-BDG</b></div>
+                    <div style="text-align:right"><span>STATUS:</span> <b>SIMULASI</b></div>
+                </div>
+
+                <div class="receipt-section-lbl">RINCIAN JAHITAN KODE:</div>
+                <div class="receipt-items-list" id="rc-items">
+                    <!-- Live Itemized List rendered via JS -->
+                </div>
+
+                <div class="rc-freebies">
+                    <div class="rc-free-row">
+                        <span>• Sesi Konsultasi Ukur Badan</span>
+                        <span class="rc-free-tag">GRATIS</span>
+                    </div>
+                    <div class="rc-free-row">
+                        <span>• Garansi Teknis 30 Hari Penuh</span>
+                        <span class="rc-free-tag">TERMASUK</span>
+                    </div>
+                </div>
+
+                <div class="receipt-total-wrap">
+                    <small>ESTIMASI INVESTASI BERSIH</small>
+                    <div class="big" id="tot">Rp 2.000.000</div>
+                </div>
+
+                <div class="receipt-eta" id="eta">Selesai sekitar 5 sampai 7 hari kerja.</div>
+
+                <!-- Real Barcode Graphic -->
+                <div class="receipt-barcode" aria-hidden="true">
+                    <span class="w2"></span><span class="sp"></span>
+                    <span class="w1"></span><span class="w3"></span><span class="sp"></span>
+                    <span class="w2"></span><span class="w1"></span><span class="sp"></span>
+                    <span class="w3"></span><span class="w2"></span><span class="sp"></span>
+                    <span class="w1"></span><span class="w2"></span><span class="w3"></span><span class="sp"></span>
+                    <span class="w2"></span><span class="w1"></span>
+                </div>
+                <div class="receipt-barcode-code">DW-NOTA-2026-OFFICIAL</div>
+
+                <div class="receipt-stamp">
+                    ★ TERIMA KASIH TELAH MENDUKUNG BRAND LOKAL ★<br>
+                    <i>"No refund for boring templates."</i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: RAWAT (MAINTENANCE WORKSHOP) -->
+    <section id="rawat">
+        <div class="care-header">
+            <div class="care-kicker">WORKSHOP & MAINTENANCE CLINIC</div>
+            <h2>Website juga perlu dirawat.</h2>
+            <p style="margin-top:14px">Kayak pakaian atau sneakers favorit: dirawat teratur biar awet, selalu prima, dan
+                nggak gampang kena masalah. Pilih paket servis yang pas buat bisnismu.</p>
+        </div>
+
+        <div class="care-packages">
+            <!-- Card 1: Servis Basic -->
+            <div class="care-card">
+                <div class="care-card-top">
+                    <span class="care-type-badge">RAWAT RUTIN</span>
+                    <h3>Paket Basic</h3>
+                    <div class="care-price">
+                        <span class="c-rp">Rp</span>
+                        <span class="c-num">75.000</span>
+                        <span class="c-per">/ bulan</span>
+                    </div>
+                    <p class="care-card-sub">Cocok buat website landing page atau profil bisnis yang butuh proteksi
+                        aktif tanpa perlu sering ganti isi konten.</p>
+                </div>
+                <ul class="care-checklist">
+                    <li><span>✓</span> Backup database & file mingguan otomatis ke cloud</li>
+                    <li><span>✓</span> Update berkala sistem keamanan & proteksi spam</li>
+                    <li><span>✓</span> Monitoring server & uptime 24/7</li>
+                    <li><span>✓</span> Bantuan respon teknis maksimal 2 hari kerja</li>
+                </ul>
+                <div class="care-discount-tag">🏷️ Bayar setahun = diskon 2 bulan (cukup bayar Rp 750.000)</div>
+            </div>
+
+            <!-- Card 2: Servis Plus (VIP) -->
+            <div class="care-card care-card-vip">
+                <div class="care-card-top">
+                    <span class="care-type-badge care-vip-badge">★ PALING POPULER • VIP SUPPORT</span>
+                    <h3>Paket Plus</h3>
+                    <div class="care-price">
+                        <span class="c-rp">Rp</span>
+                        <span class="c-num">350.000</span>
+                        <span class="c-per">/ bulan</span>
+                    </div>
+                    <p class="care-card-sub">Pilihan utama kafe, toko online, & bisnis aktif yang rutin update promo,
+                        menu baru, harga produk, atau event bulanan.</p>
+                </div>
+                <ul class="care-checklist">
+                    <li><span>✓</span> <b>Semua perlindungan lengkap Paket Basic</b></li>
+                    <li><span>✓</span> <b>4x Jatah Revisi Konten / Bulan</b> (ubah teks, ganti foto/harga)</li>
+                    <li><span>✓</span> Laporan analitik & trafik pengunjung bulanan</li>
+                    <li><span>✓</span> <b>Prioritas respon cepat maksimal 1 hari kerja</b></li>
+                </ul>
+                <div class="care-discount-tag vip-tag">🏷️ Bayar setahun = diskon 2 bulan (cukup bayar Rp 3.500.000)
+                </div>
+            </div>
+        </div>
+
+        <p class="note" style="margin-top:20px;text-align:center">💡 <i>Catatan: 1x perubahan konten kecil mencakup
+                pembaruan pada 1 halaman dengan maksimal 100 kata atau penggantian 3 gambar produk/banner.</i></p>
+    </section>
+
+    <!-- SECTION: CTA -->
+    <section>
+        <div class="cta">
+            <div class="cta-stage">
+                <!-- Mascot Si Kursor Showcase Card -->
+                <div class="cta-mascot-card">
+                    <svg class="cta-kursor-svg" viewBox="0 0 200 240" role="img"
+                        aria-label="Si Kursor melambai mengajak ngobrol">
+                        <!-- Shadow -->
+                        <path d="M40 14 L168 128 L112 132 L130 188 L100 198 L82 142 L40 176 Z" fill="#0E2A1A"
+                            opacity="0.3" transform="translate(8 8)" />
+                        <!-- Body -->
+                        <path d="M40 14 L168 128 L112 132 L130 188 L100 198 L82 142 L40 176 Z" fill="#F2EBD3"
+                            stroke="#0E2A1A" stroke-width="5" stroke-linejoin="round" />
+                        <!-- Eyes happy smiling -->
+                        <circle cx="70" cy="86" r="8" fill="#0E2A1A" />
+                        <circle cx="102" cy="104" r="8" fill="#0E2A1A" />
+                        <circle cx="73" cy="83" r="3" fill="#F2EBD3" />
+                        <circle cx="105" cy="101" r="3" fill="#F2EBD3" />
+                        <!-- Big happy smile -->
+                        <path d="M70 118 q20 18 38 2" stroke="#0E2A1A" stroke-width="4.5" fill="none"
+                            stroke-linecap="round" />
+                        <!-- Legs -->
+                        <path d="M100 196 l-5 32 h18 M128 186 l12 36 h16" stroke="#0E2A1A" stroke-width="6" fill="none"
+                            stroke-linecap="round" />
+                        <!-- Right arm raised waving hello 👋 -->
+                        <path d="M158 118 C182 92 198 72 190 48" stroke="#0E2A1A" stroke-width="7" fill="none"
+                            stroke-linecap="round" />
+                        <circle cx="188" cy="44" r="11" fill="#E8B429" stroke="#0E2A1A" stroke-width="4" />
+                        <!-- Left arm friendly akimbo -->
+                        <path d="M54 148 C30 146 16 130 22 112" stroke="#0E2A1A" stroke-width="7" fill="none"
+                            stroke-linecap="round" />
+                        <circle cx="24" cy="110" r="9" fill="#E8B429" stroke="#0E2A1A" stroke-width="3.5" />
+                        <!-- Little sparks -->
+                        <text x="146" y="36" font-size="20" fill="#E8B429">✨</text>
+                        <text x="18" y="70" font-size="14" fill="#E8B429">✦</text>
+                    </svg>
+                </div>
+
+                <!-- Content Area -->
+                <div class="cta-content">
+                    <h2>Hai! Udah kepikiran mau bikin <span>Website?</span></h2>
+
+                    <div class="cta-chat-box">
+                        <p class="cta-desc">Mau cerita soal website yang kamu pengen? Boleh banget! Nggak perlu bingung
+                            mulai dari mana, langsung kontak no dibawah ya! 👋</p>
+                    </div>
+
+                    <div class="cta-action-area">
+                        <a class="btn btn-cta-main" id="cta-wa"
+                            href="https://wa.me/6285183324266?text=Halo%20Distro%20Web%2C%20aku%20mau%20cerita%20soal%20website%20yang%20aku%20pengen"
+                            target="_blank" rel="noopener">
+                            <svg class="cta-wa-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            <span>Mulai Ngobrol di WhatsApp →</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>Dijahit dengan teliti di Bandung, 2026. Different Looks. Different Links.</footer>
+    </section>
+
+<script is:inline>
+(function () {
+            var $ = function (s) { return document.querySelector(s); };
+            var rp = function (n) { return 'Rp ' + Math.round(n).toLocaleString('id-ID'); };
+
+            // THEME SWITCHER
+            var root = document.documentElement;
+            var themeBtn = $('#theme-btn');
+            var themeIcon = $('#theme-icon');
+
+            function getSystemTheme() {
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+
+            var currentTheme = localStorage.getItem('dw_theme') || getSystemTheme();
+            function applyTheme(theme) {
+                root.setAttribute('data-theme', theme);
+                if (themeIcon) themeIcon.textContent = theme === 'dark' ? '☀' : '☾';
+                localStorage.setItem('dw_theme', theme);
+            }
+            applyTheme(currentTheme);
+
+            if (themeBtn) {
+                themeBtn.addEventListener('click', function () {
+                    var nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                    applyTheme(nextTheme);
+                });
+            }
+
+            // HANGTAG & MASCOT INTERACTIVE 3D PARALLAX
+            var m = $('#m'), eye = $('#eye'), tag = $('#tag');
+
+            window.addEventListener('pointermove', function (e) {
+                var x = e.clientX / window.innerWidth - 0.5;
+                var y = e.clientY / window.innerHeight - 0.5;
+
+                // Mascot follow
+                if (m && eye) {
+                    m.style.transform = 'translate(' + (x * -20) + 'px,' + (y * -14) + 'px) rotate(' + (x * 6) + 'deg)';
+                    eye.style.transform = 'translate(' + (x * 6) + 'px,' + (y * 4) + 'px)';
+                }
+
+                // Hangtag swing physics
+                if (tag) {
+                    tag.style.transform = 'rotate(' + (x * 12) + 'deg) translateY(' + (Math.abs(x) * 4) + 'px)';
+                }
+            });
+
+            // BEFORE/AFTER COMPARISON SLIDER
+            var rng = $('#rng'), cmp = $('#cmp'), cus = $('#cus');
+            function setP() {
+                var val = rng.value + '%';
+                cmp.style.setProperty('--p', val);
+                if (cus) cus.style.setProperty('--p', val);
+            }
+            rng.addEventListener('input', setP);
+            setP();
+
+            var t = 0, auto = setInterval(function () {
+                t += 0.08;
+                rng.value = 50 + Math.sin(t) * 30;
+                setP();
+            }, 40);
+
+            // Stop auto-sweep on any user interaction with the slider or comparison box
+            function stopAuto() {
+                if (auto) {
+                    clearInterval(auto);
+                    auto = null;
+                }
+            }
+
+            ['pointerdown', 'mousedown', 'touchstart', 'keydown', 'focus'].forEach(function (ev) {
+                rng.addEventListener(ev, stopAuto);
+                cmp.addEventListener(ev, stopAuto);
+            });
+
+            // Direct pointer drag & click on comparison container
+            var isDragging = false;
+            function updateFromPointer(e) {
+                var rect = cmp.getBoundingClientRect();
+                var clientX = e.clientX || (e.touches && e.touches[0] ? e.touches[0].clientX : 0);
+                var p = Math.max(0, Math.min(100, ((clientX - rect.left) / rect.width) * 100));
+                rng.value = p;
+                setP();
+            }
+
+            cmp.addEventListener('pointerdown', function (e) {
+                stopAuto();
+                isDragging = true;
+                updateFromPointer(e);
+            });
+
+            window.addEventListener('pointermove', function (e) {
+                if (isDragging) {
+                    updateFromPointer(e);
+                }
+            });
+
+            window.addEventListener('pointerup', function () {
+                isDragging = false;
+            });
+
+            // TIMELINE PROGRESS
+            var tl = $('#tl'), sts = [].slice.call(document.querySelectorAll('.st'));
+            function prog() {
+                var r = tl.getBoundingClientRect();
+                var p = Math.min(1, Math.max(0, (window.innerHeight * 0.6 - r.top) / r.height));
+                tl.style.setProperty('--h', (p * 100) + '%');
+                sts.forEach(function (s) {
+                    s.classList.toggle('on', s.getBoundingClientRect().top < window.innerHeight * 0.72);
+                });
+            }
+            window.addEventListener('scroll', prog, { passive: true });
+            window.addEventListener('resize', prog);
+            prog();
+
+            // TECH PACK & PACKAGE TABS
+            var D = {
+                kaos: {
+                    name: 'Kaos Polos',
+                    art: 'ART. DW-KAOS-01',
+                    target: 'Solo founder, musisi / rilis single band, produk viral, portofolio profesional, atau upgrade tautan link-in-bio Instagram agar konversi to the point tanpa distraksi.',
+                    i: [
+                        'Desain eksklusif custom (1 halaman landing page panjang tanpa template)',
+                        'Tampilan adaptif dan responsif sempurna di HP, tablet, & laptop',
+                        'Tombol integrasi langsung ke WhatsApp & Media Sosial',
+                        'Integrasi Google Maps lokasi bisnismu',
+                        'Setup domain dan hosting resmi atas nama bisnismu',
+                        'Optimasi kecepatan loading dan SEO dasar Google'
+                    ],
+                    f: [
+                        ['Estimasi Waktu', '5 - 7 Hari Kerja'],
+                        ['Jatah Revisi', '2 Kali'],
+                        ['Total Investasi', 'Rp 2.000.000']
+                    ]
+                },
+                kemeja: {
+                    name: 'Kemeja',
+                    art: 'ART. DW-KEMEJA-02',
+                    target: 'Kafe, coffee shop, barbershop, studio arsitek / fotografi, agensi kreatif, firma, & UMKM berkembang yang butuh kehadiran digital kredibel, elegan, dan siap tampil di Google.',
+                    i: [
+                        'Semua keunggulan paket Kaos Polos',
+                        'Halaman lengkap 4 hingga 6 halaman (Home, About, Layanan, Portofolio, Kontak)',
+                        'Galeri portofolio interaktif / showcase karya',
+                        'Formulir kontak inquiry otomatis terkirim ke email',
+                        'Setup Google Bisnis & Google Analytics tracking',
+                        'Panduan video tutorial cara update konten sendiri'
+                    ],
+                    f: [
+                        ['Estimasi Waktu', '10 - 15 Hari Kerja'],
+                        ['Jatah Revisi', '3 Kali'],
+                        ['Total Investasi', 'Rp 4.500.000']
+                    ]
+                },
+                jaket: {
+                    name: 'Jaket',
+                    art: 'ART. DW-JAKET-03',
+                    target: 'Brand clothing/distro streetwear, merchandise store, butik fashion, brand skincare & toko retail dengan katalog produk dinamis, kalkulator ongkir, dan sistem pembayaran otomatis.',
+                    i: [
+                        'Semua keunggulan paket Kemeja',
+                        'Katalog online hingga 30 produk (dengan 6 variasi warna/ukuran)',
+                        'Sistem keranjang belanja & checkout otomatis',
+                        'Koneksi Payment Gateway (QRIS, Transfer Bank, E-Wallet)',
+                        'Kalkulator hitung ongkos kirim otomatis (JNE, SiCepat, dll)',
+                        'Sesi training privat 1-on-1 pengelolaan toko online'
+                    ],
+                    f: [
+                        ['Estimasi Waktu', '20 - 30 Hari Kerja'],
+                        ['Jatah Revisi', '3 Kali'],
+                        ['Total Investasi', 'Rp 9.000.000']
+                    ]
+                }
+            };
+
+            function show(k) {
+                var data = D[k];
+                $('#spec-art').textContent = data.art;
+                $('#spec-target').textContent = data.target;
+                $('#stat-time').textContent = data.f[0][1];
+                $('#stat-rev').textContent = data.f[1][1];
+                $('#stat-price').textContent = data.f[2][1];
+                $('#items').innerHTML = data.i.map(function (x, n) {
+                    return '<li style="animation-delay:' + (n * 40) + 'ms"><span class="spec-icon">✓</span><span>' + x + '</span></li>';
+                }).join('');
+            }
+
+            document.querySelectorAll('.tg').forEach(function (b) {
+                b.addEventListener('click', function () {
+                    document.querySelectorAll('.tg').forEach(function (o) { o.setAttribute('aria-pressed', o === b); });
+                    show(b.dataset.k);
+                });
+            });
+            show('kaos');
+
+            // CALCULATOR & RECEIPT
+            var cur = 2000000, shown = 2000000;
+            var ET = {
+                2000000: ['5 sampai 7', '4 sampai 5'],
+                4500000: ['10 sampai 15', '7 sampai 10'],
+                9000000: ['20 sampai 30', '14 sampai 21']
+            };
+            var NM = {
+                2000000: 'Kaos Polos (Landing Page)',
+                4500000: 'Kemeja (Company Profile)',
+                9000000: 'Jaket (Toko Online)'
+            };
+
+            // Set today's date on receipt
+            var d = new Date();
+            var rcDate = $('#rc-date');
+            if (rcDate) {
+                rcDate.textContent = 'TGL: ' + d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+            }
+
+            function calc() {
+                var pEl = document.querySelector('input[name=p]:checked');
+                var p = +pEl.value;
+                var pName = pEl.dataset.name || NM[p];
+                var k = $('#kilat').checked;
+
+                var items = [];
+                items.push({ name: '1x ' + pName, price: p });
+
+                var a = 0;
+                document.querySelectorAll('#ad input[type=checkbox]:not(#kilat)').forEach(function (c) {
+                    if (c.checked) {
+                        var val = +c.value;
+                        a += val;
+                        items.push({ name: '1x ' + (c.dataset.name || 'Add-on'), price: val });
+                    }
+                });
+
+                var kilatCost = 0;
+                if (k) {
+                    kilatCost = p * 0.3;
+                    items.push({ name: '1x Pengerjaan Kilat (+30%)', price: kilatCost });
+                }
+
+                cur = p + a + kilatCost;
+
+                // Render live thermal receipt items
+                var rcItems = $('#rc-items');
+                if (rcItems) {
+                    rcItems.innerHTML = items.map(function (item) {
+                        return '<div class="rc-item"><span>' + item.name + '</span><span>' + rp(item.price) + '</span></div>';
+                    }).join('');
+                }
+
+                $('#eta').textContent = 'Selesai sekitar ' + ET[p][k ? 1 : 0] + ' hari kerja.' + (k ? ' (Slot kilat prioritas aktif)' : '');
+
+                // Formatted WhatsApp message with receipt breakdown
+                var waBreakdown = items.map(function (it) { return '• ' + it.name + ': ' + rp(it.price); }).join('\n');
+                var waMsg = 'Halo Distro Web, saya sudah simulasikan nota di website:\n\n' + waBreakdown + '\n\nTotal Estimasi: ' + rp(cur) + ' (belum termasuk hosting & domain).\nBoleh konsultasi ukur badan?';
+                var waEl = $('#wa');
+                if (waEl) {
+                    waEl.href = 'https://wa.me/6285183324266?text=' + encodeURIComponent(waMsg);
+                }
+                var ctaWa = $('#cta-wa');
+                if (ctaWa) {
+                    ctaWa.href = 'https://wa.me/6285183324266?text=' + encodeURIComponent(waMsg);
+                }
+            }
+
+            function tick() {
+                shown += (cur - shown) * 0.18;
+                if (Math.abs(cur - shown) < 1) shown = cur;
+                $('#tot').textContent = rp(shown);
+                requestAnimationFrame(tick);
+            }
+
+            document.querySelectorAll('.calc input').forEach(function (i) {
+                i.addEventListener('change', calc);
+            });
+            calc();
+            tick();
+        })();
+</script>
+</Layout>
